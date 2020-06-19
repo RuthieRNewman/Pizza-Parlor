@@ -1,6 +1,6 @@
 
 //business logic fo pizza
-function Pizza (size, toppings) {
+function Pizza (size, toppings, toppingInteger) {
   this.size = {
     size1 : "small",
     size2 : "large" 
@@ -8,10 +8,18 @@ function Pizza (size, toppings) {
   this.toppings = {
     'topping1' : "olives",
     'topping2' : "mushrooms"
-  }
+  };
 };
 
 Pizza.prototype.totalToppings = function(userPizzaToppings) { 
+  let totalPizzaToppings
+  for (let i=0; i<this.toppings.length; i++)
+    if (this.toppings[i]){
+      if (this.toppings[i] === topping1){
+        let toppingTotal = 1
+        console.log(toppingTotal);
+      }
+}
 }
 
 
@@ -41,15 +49,8 @@ $(document).ready(function(){
     const userPizzaToppingSelection = $(this).val();
     let userPizzaToppings = userPizzaToppingSelection;
     console.log(userPizzaToppings);
-      if (userPizzaToppingSelection === "olives"){
-      let topping1 = 1
-      console.log(topping1);
-      }else if (userPizzaToppingSelection === "mushrooms"){
-      let topping2 = 2
-      console.log(topping2);
-      }
-  });
+    });
     let newUserPizza = new Pizza(userPizzaSize, userPizzaToppings)
-    console.log(newUserPizza.toppings.topping1)
+    console.log()
     }); 
   });
