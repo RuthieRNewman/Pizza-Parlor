@@ -10,8 +10,6 @@ This site was created to meet the parameters of an independant project that is r
 
 ## Setup/Installation Requirements
 
-##To make contributions…
-
 **To setup:**
 
 1. Navigate to https://github.com/ruthiernewman/REPO-NAME
@@ -52,6 +50,6 @@ Bootstrap
 
 ### License
 
-*This software is licensed under the MIT license
+**This software is licensed under the MIT license**
 
 Copyright (c) 2020 **Ruthie Newman**
